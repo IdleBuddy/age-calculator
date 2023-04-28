@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 94%);
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    position: relative;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 20px 20px 80px 20px;
+    margin: auto 10px;
+}
+
+.input-container {
+    display: flex;
+    position: relative;
+    margin: 50px auto;
+}
+
+.input-card {
+    width: 33%;
+}
+
+label {
+    text-transform: uppercase;
+    color: hsl(0, 1%, 44%);
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+}
+
+input {
+    margin-top: 3px;
+    width: 95%;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 85%);
+    padding-left: 10px;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.age-display {
+    font-size: 52px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 10px;
+    letter-spacing: 1.5px;
+    margin: 80px 0px auto;
+}
+
+span {
+    color: hsl(259, 100%, 65%);
+}
+
+button {
+    background-color: hsl(259, 100%, 65%);
+    background-position: 18px;
+    border: none;
+    border-radius: 50px;
+    padding: 20px;
+    position: absolute;
+    top: 190px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(259, 65%, 65%);
+}
+
+hr {
+    border: 1px solid hsl(0, 0%, 85%);
+}
+
+.message {
+    height: 12px;
+    width: 100%;
+    color: hsl(0, 100%, 67%);
+    margin: 5px auto;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+#formerror {
+    top: 168px;
+    width: 100%;
+    position: absolute;
+}
+
+@media all and (min-width: 580px) {
+    main {
+        max-width: 690px;
+        padding: 30px;
+    }
+
+    form {
+        justify-content: flex-start;
+        margin: 30px auto;
+    }
+
+    .input-card {
+        width: 28%;
+    }
+
+    button {
+        top: 200px;
+        right: 12%;
+        padding: 20px;
+        background-position: 20px;
+        background-size: 40px;
+    }
+
+    .age-display {
+        margin: 20px auto;
+        font-size: 88px;
+    }
+
+    input {
+        width: 95%;
+    }
+}
